@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Database configuration
-const password = "Karthik123"
-mongoose.connect(`mongodb+srv://Karthik_Shetty:${password}@cluster0.2s0dylw.mongodb.net/todoListDB`, { useNewUrlParser: true, useUnifiedTopology: true });
+const password = "yourpassword";
+mongoose.connect(`mongodb+srv://YourUserName:${password}@cluster0.2s0dylw.mongodb.net/todoListDB`, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const todaySchema = new mongoose.Schema({
   name: String,
